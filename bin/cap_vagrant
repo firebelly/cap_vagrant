@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require "cap_vagrant/app"
+
+App.start
