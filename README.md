@@ -10,15 +10,7 @@ Create a vagrant stage file for your capistrano deployment.
 
 ## Installation
 
-Add this line to your application's Gemfile in the same group as capistrano:
-
-    gem 'cap_vagrant'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install cap_vagrant
 
