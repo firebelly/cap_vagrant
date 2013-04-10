@@ -6,3 +6,10 @@ default_environment["RAILS_ENV"] = "#{rails_env}"
 set :user, "<%= vars['user'] %>"
 ssh_options[:keys] = ['<%= vars['keys'] %>']
 ssh_options[:port] = <%= vars['port'] %>
+
+# that doesn't work for me for unknown reason
+# ssh_options[:forward_agent] = true
+# (as well as 'ForwardAgent yes' in .ssh/config
+
+# but this works as expected
+set :ssh_options, {:forward_agent => true}
